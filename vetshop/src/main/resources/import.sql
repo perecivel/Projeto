@@ -52,4 +52,3 @@ INSERT INTO fornecedor (razao_social, cnpj, email, telefone) VALUES ('Joelson', 
 INSERT INTO fornecedor (razao_social, cnpj, email, telefone) VALUES ('Murilo', '23286790000119', 'murilo@hotmail.com', '(61) 99488-3273');
 
 -- Adicionando Pedidos
-
