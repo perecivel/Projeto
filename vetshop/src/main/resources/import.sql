@@ -58,34 +58,10 @@ INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_a
 INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Rações Breno', 4, 4, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
 INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Acessórios Luizao', 5, 5, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
 
+-- Relacionando produtos ao pedido no ItemPedido
+INSERT INTO item_pedido (pedido_id, produto_id) VALUES (1, 1), (1, 2),(1,3);
+INSERT INTO item_pedido (pedido_id, produto_id) VALUES (2, 1), (2, 2),(2,3);
+INSERT INTO item_pedido (pedido_id, produto_id) VALUES (3, 1), (3, 2),(3,3);
+INSERT INTO item_pedido (pedido_id, produto_id) VALUES (4, 1), (4, 2),(4,3);
+INSERT INTO item_pedido (pedido_id, produto_id) VALUES (5, 1), (5, 2),(5,3);
 
---Adiciona 5 pedidos para cada cliente (NAO FUNCIONA)
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Medicamentos Eber', 1, 1, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Suplementos Eber', 1, 2, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Curativos Eber', 1, 3, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Rações Eber', 1, 4, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Acessórios Eber', 1, 5, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
-
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Medicamentos Diogo', 2, 1, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Suplementos Diogo', 2, 2, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Curativos Diogo', 2, 3, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Rações Diogo', 2, 4, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Acessórios Diogo', 2, 5, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
-
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Medicamentos Allan', 3, 1, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Suplementos Allan', 3, 2, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Curativos Allan', 3, 3, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Rações Allan', 3, 4, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Acessórios Allan', 3, 5, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
-
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Medicamentos Breno', 4, 1, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Suplementos Breno', 4, 2, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Curativos Breno', 4, 3, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Rações Breno', 4, 4, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Acessórios Breno', 4, 5, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
-
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Medicamentos Luizao', 5, 1, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Suplementos Luizao', 5, 2, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Curativos Luizao', 5, 3, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Rações Luizao', 5, 4, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);
--- INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_alteracao) VALUES ('Acessórios Luizao', 5, 5, PARSEDATETIME('2024-09-02-00.00.00','yyyy-MM-dd-HH.mm.ss'), NULL);

@@ -32,17 +32,16 @@ public class Pedido {
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "pedido_id")
-    private Set<Produto> produtos;
+    private Set<ItemPedido> Produtos;
 
     private LocalDate dataDeInclusao;
     private LocalDate dataDeAlteracao;
     
-
     public Long getId() {
         return Id;
     }
-    public void setId(Long Id) {
-        this.Id = Id;
+    public void setId(Long id) {
+        Id = id;
     }
     public String getNome() {
         return nome;
@@ -62,11 +61,11 @@ public class Pedido {
     public void setFornecedor(Fornecedor fornecedor) {
         this.fornecedor = fornecedor;
     }
-    public Set<Produto> getProdutos() {
-        return produtos;
+    public Set<ItemPedido> getItensPedido() {
+        return Produtos;
     }
-    public void setProdutos(Set<Produto> produtos) {
-        this.produtos = produtos;
+    public void setItensPedido(Set<ItemPedido> itensPedido) {
+        this.Produtos = itensPedido;
     }
     public LocalDate getDataDeInclusao() {
         return dataDeInclusao;
@@ -80,19 +79,17 @@ public class Pedido {
     public void setDataDeAlteracao(LocalDate dataDeAlteracao) {
         this.dataDeAlteracao = dataDeAlteracao;
     }
-
     public Pedido() {
-        this.produtos = new HashSet<>();
+        this.Produtos = new HashSet<>();
     }
-
-    public Pedido(Long Id, String nome, Cliente cliente, Fornecedor fornecedor, Set<Produto> produtos,
+    public Pedido(Long id, String nome, Cliente cliente, Fornecedor fornecedor, Set<ItemPedido> itensPedido,
             LocalDate dataDeInclusao, LocalDate dataDeAlteracao) {
-        this.Id = Id;
+        Id = id;
         this.nome = nome;
         this.cliente = cliente;
         this.fornecedor = fornecedor;
-        this.produtos = produtos;
+        this.Produtos = itensPedido;
         this.dataDeInclusao = dataDeInclusao;
         this.dataDeAlteracao = dataDeAlteracao;
-    }
+    }  
 }
