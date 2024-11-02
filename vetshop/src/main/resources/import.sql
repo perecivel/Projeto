@@ -60,8 +60,8 @@ INSERT INTO pedido (nome, cliente_id, fornecedor_id, data_de_inclusao, data_de_a
 
 -- Relacionando produtos ao pedido no ItemPedido
 INSERT INTO item_pedido (pedido_id, produto_id) VALUES (1, 1), (1, 2),(1,3);
-INSERT INTO item_pedido (pedido_id, produto_id) VALUES (2, 1), (2, 2),(2,3);
-INSERT INTO item_pedido (pedido_id, produto_id) VALUES (3, 1), (3, 2),(3,3);
-INSERT INTO item_pedido (pedido_id, produto_id) VALUES (4, 1), (4, 2),(4,3);
-INSERT INTO item_pedido (pedido_id, produto_id) VALUES (5, 1), (5, 2),(5,3);
+INSERT INTO item_pedido (pedido_id, produto_id) VALUES (2, 6), (2, 7),(2,8);
+INSERT INTO item_pedido (pedido_id, produto_id) VALUES (3, 11), (3, 12),(3,13);
+INSERT INTO item_pedido (pedido_id, produto_id) VALUES (4, 16), (4, 17),(4,18);
+INSERT INTO item_pedido (pedido_id, produto_id) VALUES (5, 21), (5, 22),(5,23);
 
